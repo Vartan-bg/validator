@@ -28,8 +28,8 @@
         const valid = new validator({
             selector: '#myform',
             pattern: {
-                userName: /^[а-я]$/,
-                userMessage: /^[а-я]$/
+                phone: /^\+?[78]([-()]*\d){10}$/,
+                email: /^\w+@\w+\.\w{2,}$/
             },
             method: {
                 'phone': [
